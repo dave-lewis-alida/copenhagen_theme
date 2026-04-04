@@ -38,6 +38,7 @@ export default defineConfig([
       "flash-notifications": "src/modules/flash-notifications/index.ts",
       "service-catalog": "src/modules/service-catalog/index.tsx",
       "approval-requests": "src/modules/approval-requests/index.tsx",
+      "search-ai-assistant": "src/modules/search-ai-assistant/index.tsx",
     },
     output: {
       dir: "assets",

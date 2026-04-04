@@ -264,6 +264,18 @@
       ]
     },
     {
+      "label": "ai_assistant_group_label",
+      "variables": [
+        {
+          "identifier": "ai_assistant_backend_url",
+          "type": "text",
+          "description": "ai_assistant_backend_url_description",
+          "label": "ai_assistant_backend_url_label",
+          "value": ""
+        }
+      ]
+    },
+    {
       "label": "search_group_label",
       "variables": [
         {

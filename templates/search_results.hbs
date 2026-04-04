@@ -146,7 +146,19 @@
     </aside>
 
     <section id="main-content" class="search-results-column">
-      {{generative_answers}}
+      {{#if query}}
+      <div id="search-ai-assistant"></div>
+      <script type="module">
+        import { renderSearchAiAssistant } from "search-ai-assistant";
+        const backendUrl = {{json settings.ai_assistant_backend_url}};
+        if (backendUrl) {
+          renderSearchAiAssistant(
+            { query: {{json query}}, backendUrl },
+            document.getElementById("search-ai-assistant")
+          );
+        }
+      </script>
+      {{/if}}
       <h1 class="search-results-subheading">
         {{#if results}}
           {{#is current_filter.identifier 'unified'}}
